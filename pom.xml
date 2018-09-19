@@ -71,6 +71,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+                <version>1.2.5.RELEASE</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <baseClassForTests>
+                        com.example.demospringpact.BaseTestClass
+                    </baseClassForTests>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
